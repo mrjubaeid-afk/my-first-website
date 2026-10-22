@@ -5,23 +5,135 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sarend Embroidery House</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 50px;
-            background-color: #f4f4f4;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-        h1 {
+
+        body {
+            background-color: #f8f9fa;
             color: #333;
         }
-        p. {
+
+        /* Header / Navbar */
+        header {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        /* Feature Cards */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            text-align: center;
+            border-top: 4px solid #2a5298;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            color: #1e3c72;
+            margin-bottom: 10px;
+            font-size: 1.3rem;
+        }
+
+        .card p {
             color: #666;
-            font-size: 18px;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        /* Call to Action Button */
+        .cta-section {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .btn {
+            background: #27ae60;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            box-shadow: 0 4px 10px rgba(39, 174, 96, 0.3);
+            display: inline-block;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #222;
+            color: #aaa;
+            font-size: 0.9rem;
+            margin-top: 40px;
         }
     </style>
 </head>
 <body>
-    <h1>সারেণ্ড এমব্রয়ডারি হাউসে স্বাগতম</h1>
-    <p>আমরা এআই ভিত্তিক এমব্রয়ডারি ডিজাইন ও ভিডিও কনটেন্ট তৈরি করি।</p>
+
+    <header>
+        <h1>সারেণ্ড এমব্রয়ডারি হাউস</h1>
+        <p>এআই প্রসেসড এমব্রয়ডারি ডিজাইন ও ভিডিও কনটেন্ট ক্রিয়েশন</p>
+    </header>
+
+    <div class="container">
+        <div class="card-grid">
+            <div class="card">
+                <h3>🧵 আধুনিক এমব্রয়ডারি ডিজাইন</h3>
+                <p>আমরা নিয়ে এসেছি সর্বাধুনিক এআই প্রযুক্তি নির্ভর ইউনিক ও আকর্ষণীয় থ্রি-পিস ও পোশাকের এমব্রয়ডারি ডিজাইন।</p>
+            </div>
+            <div class="card">
+                <h3>🎬 এআই ভিডিও কনটেন্ট</h3>
+                <p>এমব্রয়ডারি প্রসেস ও মেশিন সেটআপের জন্য ২-মাত্রিক এআই কার্টুন ও অ্যানিমেটেড ভিডিও প্রদর্শনী।</p>
+            </div>
+        </div>
+
+        <div class="cta-section">
+            <a href="#" class="btn">আমাদের সাথে যোগাযোগ করুন</a>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 Sarend Embroidery House. All rights reserved.
+    </footer>
+
 </body>
 </html>
